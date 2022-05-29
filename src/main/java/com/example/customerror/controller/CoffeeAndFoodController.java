@@ -35,6 +35,7 @@ public class CoffeeAndFoodController {
     @GetMapping("/coffee/food")
     public CoffeeAndFood getCoffeeAndFood(){
         log.info("GETTING INTO THE CONTROLLER FOR COFFEESANDFOOD");
+        log.info("THIS IS A SIMPLE CHANGE");
         Food food = foodService.getFood();
         Coffee coffee = coffeeService.getCoffee();
         try {
